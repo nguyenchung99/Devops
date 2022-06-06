@@ -31,6 +31,7 @@ public class OrderDetailController {
     ResponseEntity<OrderDetail> create(@RequestBody OrderDetail data){
         return orderDetailService.create(data);
     }
+    // put data
     @PutMapping("/put")
     ResponseEntity<OrderDetail> update(@RequestBody Integer id, OrderDetail data){
         OrderDetail orders = orderDetailReponsitory.getById(id);
